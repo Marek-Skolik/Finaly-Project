@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Header from './components/Views/Header/Header';
 import Footer from './components/Views/Footer/Footer';
 import HomePage from './components/Pages/HomePage/HomePage';
+import Cart from './components/Pages/Cart/Cart';
+import OrderForm from './components/Pages/OrderForm/OrderForm';
 
 function App() {
   return (
@@ -11,7 +13,9 @@ function App() {
         <Container>
           <Header />
           <Routes>
-            <Route path="/" element={<HomePage/>}/> 
+            <Route path="/" element={<HomePage />} /> 
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/orderForm" element={<OrderForm />} />
           </Routes>  
           <Footer /> 
         </Container>
