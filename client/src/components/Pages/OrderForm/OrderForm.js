@@ -41,8 +41,11 @@ const OrderForm = () => {
                 rows={3}
               />
             </Form.Group>
-            <Button className="mt-3" type="submit" variant="dark">
+            <Button className="mt-3" type="submit" variant="success">
               Zamów
+            </Button>
+            <Button href="/cart" className="mt-3 mx-3" type="submit" variant="secondary">
+              Powrót
             </Button>
           </Form>
         </Col>

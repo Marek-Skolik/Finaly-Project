@@ -6,7 +6,7 @@ function Cart() {
   return (
     <Container>
         <div className="container mt-3 mb-5">
-        <Card className="text-center" style={{ width: "30rem" }}>
+        <Card className="text-center" style={{ width: "auto" }}>
             <Card.Img variant="top" />
             <Card.Body>
             <Card.Title>Produkt</Card.Title>
@@ -15,6 +15,8 @@ function Cart() {
                 <Form.Label>Ilość</Form.Label>
                 <Form.Control
                     type="number"
+                    max="20"
+                    min="0"
                 />
                 </Form.Group>
                 <p>Cena za sztukę: zł</p>

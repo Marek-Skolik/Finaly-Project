@@ -4,7 +4,7 @@ const HomePage = () => {
     
     return (
         <Container>
-            HomePage
+            Tutaj będą wszystkie produkty
         </Container>
     )
 }
