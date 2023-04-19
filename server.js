@@ -2,21 +2,22 @@ const express = require('express');
 const { NestFactory } = require('@nestjs/core');
 const { AppModule } = require('./src/app.module');
 const mysql = require('mysql');
+require('dotenv').config();
 const cors = require('cors');
 
 const app = express();
 app.use(cors());
 
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'projectdb',
-});
+const dbUrl = process.env.DATABASE_URL;
+
+const connection = mysql.createConnection(dbUrl);
 
 connection.connect((error) => {
-  if (error) throw error;
-  console.log('Connected to the MySQL server.');
+  if (error) {
+    console.error('Błąd połączenia z bazą danych: ', error);
+  } else {
+    console.log('Połączenie z bazą danych MySQL udało się!');
+  }
 });
 
 const port = process.env.PORT || 8000;

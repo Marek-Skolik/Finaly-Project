@@ -1,10 +1,10 @@
-import { Container } from "react-bootstrap"
+import { Button, Container } from "react-bootstrap"
 
 const HomePage = () => {
     
     return (
         <Container>
-            Tutaj będą wszystkie produkty
+            <Button href="/productPage">Produkt</Button>
         </Container>
     )
 }
