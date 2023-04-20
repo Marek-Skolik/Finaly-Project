@@ -1,10 +1,21 @@
-import { Button, Container } from "react-bootstrap"
+import {  Container, Row } from "react-bootstrap"
+import SingleProduct from "../SingleProduct/SingleProduct";
 
 const HomePage = () => {
     
     return (
         <Container>
-            <Button href="/productPage">Produkt</Button>
+            <Row className="mx-1">
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+                <SingleProduct />
+            </Row>
         </Container>
     )
 }

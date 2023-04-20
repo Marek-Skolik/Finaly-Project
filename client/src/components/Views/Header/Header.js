@@ -18,6 +18,8 @@ const Header = () => {
           </Nav>
           <Nav className="col me-auto">
             <Nav.Link href="/">Strona Główna</Nav.Link>
+            <Nav.Link href="/aboutUsPage">O nas</Nav.Link>
+            <Nav.Link href="/contact">Kontakt</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="/cart">
