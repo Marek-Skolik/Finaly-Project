@@ -1,0 +1,22 @@
+.opportunity {
+    display: flex;
+    animation-name: promo-animation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes promo-animation {
+    0% {
+      transform: translateX(0);
+    }
+    33% {
+      transform: translateX(-10%);
+    }
+    66% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+  }

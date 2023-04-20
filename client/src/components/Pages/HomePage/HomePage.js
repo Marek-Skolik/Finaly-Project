@@ -1,5 +1,6 @@
 import {  Container, Row } from "react-bootstrap"
 import SingleProduct from "../SingleProduct/SingleProduct";
+import SalesSection from "./Sections/SalesSection/SalesSection";
 
 const HomePage = () => {
     
@@ -16,6 +17,7 @@ const HomePage = () => {
                 <SingleProduct />
                 <SingleProduct />
             </Row>
+            <SalesSection />
         </Container>
     )
 }
