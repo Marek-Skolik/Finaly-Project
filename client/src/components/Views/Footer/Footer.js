@@ -9,9 +9,9 @@ const Footer = () => {
           <Col md={4} className="text-center text-md-start">
             <h6>Nawigacja</h6>
             <Nav>
-                <Nav.Link style={{ color: 'gray', textDecoration: 'underline' }}>Wysyłka</Nav.Link>
-                <Nav.Link style={{ color: 'gray', textDecoration: 'underline' }}>Zwroty</Nav.Link>
-                <Nav.Link style={{ color: 'gray', textDecoration: 'underline' }}>Płatność</Nav.Link>
+                <Nav.Link href="/delivery" style={{ color: 'gray', textDecoration: 'underline' }}>Dostawa</Nav.Link>
+                <Nav.Link href="/returns" style={{ color: 'gray', textDecoration: 'underline' }}>Zwroty</Nav.Link>
+                <Nav.Link href="/payments" style={{ color: 'gray', textDecoration: 'underline' }}>Płatność</Nav.Link>
             </Nav>
           </Col>
           <Col md={4} className="text-center">

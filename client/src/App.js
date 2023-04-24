@@ -9,7 +9,10 @@ import ProductPage from './components/Pages/ProductPage/ProductPage';
 import SingleProduct from './components/Pages/SingleProduct/SingleProduct';
 import ContactPage from './components/Pages/ContactPage/ContactPage';
 import AboutUsPage from './components/Pages/AboutUsPage/AboutUsPage';
+import SalePage from './components/Pages/SalePage/SalePage';
+import Delivery from './components/Views/Footer/Delivery/Delivery';
 import Payments from './components/Views/Footer/Payments/Payments';
+import Returns from './components/Views/Footer/Returns/Returns';
 
 function App() {
   return (
@@ -25,6 +28,10 @@ function App() {
             <Route path="/singleProduct" element={<SingleProduct />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/aboutUsPage" element={<AboutUsPage />} />
+            <Route path="/salePage" element={<SalePage />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/payments" element={<Payments />} />
+            <Route path="/returns" element ={<Returns />} />
           </Routes>  
           <Footer /> 
         </Container>

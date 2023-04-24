@@ -3,7 +3,7 @@ import { Row, Col, Button, Form } from "react-bootstrap";
 
 const SingleProduct = () => {
   return (
-    <Col className="my-3">
+    <Col className="my-5">
       <Row style={{width: "25rem"}}>
         <Col md={4}>
           <img  />
