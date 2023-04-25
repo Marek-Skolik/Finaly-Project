@@ -45,7 +45,7 @@ const OrderForm = () => {
               Zamów
             </Button>
             <Button href="/cart" className="mt-3 mx-3" type="submit" variant="secondary">
-              Powrót
+              Powrót do koszyka
             </Button>
           </Form>
         </Col>

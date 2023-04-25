@@ -7,7 +7,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={4} className="text-center text-md-start">
-            <h6>Nawigacja</h6>
+            <h6>Obsługa zamówienia</h6>
             <Nav>
                 <Nav.Link href="/delivery" style={{ color: 'gray', textDecoration: 'underline' }}>Dostawa</Nav.Link>
                 <Nav.Link href="/returns" style={{ color: 'gray', textDecoration: 'underline' }}>Zwroty</Nav.Link>
