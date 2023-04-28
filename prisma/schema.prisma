@@ -13,10 +13,10 @@ datasource db {
 model Product {
   id     String @id @default(uuid())
   name      String
-  price     Float
+  price     Number
   description String?
-  photo     String?
-  photo2    String?
+  photo     Bytes
+  photo2    Bytes
   created   DateTime @default(now())
   updated   DateTime @updatedAt
 }
@@ -28,7 +28,7 @@ model Order {
   customer    String
   products    String
   quantity    String
-  totalPrice  Float
+  totalPrice  Number
   email       String
   phone       String
   adress      String
