@@ -1,17 +1,19 @@
-import { Controller, Get, ParseUUIDPipe, Param } from '@nestjs/common';
+import { Controller, Get, Param, ParseUUIDPipe } from '@nestjs/common';
 import { ProductsService } from './products.service';
 
-@Controller('products')
-export class ProductsController {
-  constructor(private productsService: ProductsService) {}
+@Controller('product')
+export class ProductController {
+  constructor(private productService: ProductsService) {}
 
   @Get('/')
   getAll() {
-    return this.productsService.getAll();
+    return this.productService.getAll();
   }
 
   @Get('/:id')
-  getById(@Param('id', new ParseUUIDPipe()) id: string) {
-    return this.productsService.getById(id);
+  async getById(@Param('id', new ParseUUIDPipe()) id: string) {
+    const product = await this.productService.getById(id);
+    if (!product) throw new Error('Product not found');
+    return product;
   }
 }

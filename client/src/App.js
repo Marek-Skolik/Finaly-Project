@@ -15,6 +15,12 @@ import Payments from './components/Views/Footer/Payments/Payments';
 import Returns from './components/Views/Footer/Returns/Returns';
 
 function App() {
+
+
+  const Data = () => {
+    localStorage.setItem("user", JSON.stringify("Marek"));
+  };
+
   return (
       <div>
         <Router>

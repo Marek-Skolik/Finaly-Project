@@ -1,22 +1,24 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { Container, Row } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { useSelector } from "react-redux";
+import { Container, Row, Col } from "react-bootstrap";
 import SingleProduct from "../SingleProduct/SingleProduct";
+import { API_URL } from "../../../config";
+import { getAll } from "../../../redux/productsRedux";
 
 const HomePage = () => {
-  const [products, setProducts] = useState([]);
+  useEffect(() => fetchData(), []);
 
-  useEffect(() => {
-    axios.get("/products").then((response) => {
-      setProducts(response.data);
-    });
-  }, []);
+  function fetchData() {
+    fetch(`${API_URL}/api/products`)
+      .then((res) => res.json())
+  }
+
+  const products = useSelector(getAll);
 
   return (
     <Container>
       <Row>
-        {products.map((product) => (
-          <SingleProduct key={product.id} productId={product.id} name={product.name} price={product.price} photo={product.photo} />
+        {products.map((product) => (<Col key={product.id}><SingleProduct {...product} /></Col>
         ))}
       </Row>
     </Container>
