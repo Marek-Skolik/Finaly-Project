@@ -16,27 +16,27 @@ import Returns from './components/Views/Footer/Returns/Returns';
 
 function App() {
   return (
-    <div>
-      <Router>
-        <Container>
-          <Header />
-          <Routes>
-            <Route path="/" element={<HomePage />} /> 
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/orderForm" element={<OrderForm />} />
-            <Route path="/productPage" element={<ProductPage />} />
-            <Route path="/singleProduct" element={<SingleProduct />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/aboutUsPage" element={<AboutUsPage />} />
-            <Route path="/salePage" element={<SalePage />} />
-            <Route path="/delivery" element={<Delivery />} />
-            <Route path="/payments" element={<Payments />} />
-            <Route path="/returns" element ={<Returns />} />
-          </Routes>  
-          <Footer /> 
-        </Container>
-      </Router>  
-    </div>
+      <div>
+        <Router>
+          <Container>
+            <Header />
+            <Routes>
+              <Route path="/" element={<HomePage />} /> 
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/orderForm" element={<OrderForm />} />
+              <Route path="/productPage" element={<ProductPage />} />
+              <Route path="/singleProduct" element={<SingleProduct />} />
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/aboutUsPage" element={<AboutUsPage />} />
+              <Route path="/salePage" element={<SalePage />} />
+              <Route path="/delivery" element={<Delivery />} />
+              <Route path="/payments" element={<Payments />} />
+              <Route path="/returns" element ={<Returns />} />
+            </Routes>  
+            <Footer /> 
+          </Container>
+        </Router>  
+      </div>
   );
 }
 

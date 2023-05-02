@@ -1,7 +1,7 @@
-import { Controller, Get, Post, ParseUUIDPipe, Param } from '@nestjs/common';
+import { Controller, Get, ParseUUIDPipe, Param } from '@nestjs/common';
 import { ProductsService } from './products.service';
 
-@Controller('books')
+@Controller('products')
 export class ProductsController {
   constructor(private productsService: ProductsService) {}
 

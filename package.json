@@ -21,10 +21,12 @@
   },
   "dependencies": {
     "@nestjs/common": "^9.4.0",
+    "@nestjs/config": "^2.3.1",
     "@nestjs/core": "^9.4.0",
     "@nestjs/mapped-types": "^1.2.2",
     "@nestjs/microservices": "^9.4.0",
     "@nestjs/platform-express": "^9.4.0",
+    "@nestjs/serve-static": "^3.0.1",
     "@nestjs/typeorm": "^9.0.1",
     "@prisma/client": "^4.13.0",
     "class-transformer": "^0.5.1",
@@ -32,6 +34,10 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.17.1",
+    "react-redux": "7.2.6",
+    "react-router-dom": "6.0.1",
+    "redux": "4.1.2",
+    "redux-devtools-extension": "2.13.9",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.2.0",
     "typeorm": "^0.3.15"
