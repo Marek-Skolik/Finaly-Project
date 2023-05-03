@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.79a93175.css",
+    "main.js": "/static/js/main.3375f7a0.js",
+    "static/media/payu.png": "/static/media/payu.051cdc331731425208ff.png",
+    "static/media/ups.png": "/static/media/ups.92524355f3aaa3c72f5d.png",
+    "static/media/applepay.png": "/static/media/applepay.17e5fc0f8bf0dcd8b98f.png",
+    "index.html": "/index.html",
+    "main.79a93175.css.map": "/static/css/main.79a93175.css.map",
+    "main.3375f7a0.js.map": "/static/js/main.3375f7a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79a93175.css",
+    "static/js/main.3375f7a0.js"
+  ]
+}
