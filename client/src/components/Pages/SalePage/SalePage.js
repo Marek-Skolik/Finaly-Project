@@ -8,9 +8,6 @@ const SalePage = () => {
             <SingleProduct />
             <SingleProduct />
             <SingleProduct />
-            <SingleProduct />
-            <SingleProduct />
-            <SingleProduct />
         </div>
       </div>
     );

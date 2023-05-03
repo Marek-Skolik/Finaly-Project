@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Button, Col, Form, Row } from "react-bootstrap";
+import { API_URL } from "../../../config";
 
 
-const SingleProduct = () => {
+const SingleProduct = (props) => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    // pobranie danych produktu z serwera
-    axios.get(process.env.DATABASE_URL)
+    axios.get(API_URL + '/product/')
       .then(response => {
         setProduct(response.data);
       })
@@ -17,7 +17,6 @@ const SingleProduct = () => {
       });
   }, []);
 
-  // sprawdzenie czy dane produktu są pobrane
   if (!product) {
     return <div>Loading...</div>;
   }
@@ -27,11 +26,11 @@ const SingleProduct = () => {
     <Col className="my-5">
       <Row style={{ width: "25rem" }}>
         <Col md={4}>
-          <img src={product.photo} alt="zdjęcie" />
+          <img src={`./images/products/${props.photo}`} alt="zdjęcie" />
         </Col>
         <Col md={8}>
-          <h2>{product.name}</h2>
-          <p>Cena: {product.price}zł</p>
+          <h2>{props.name}</h2>
+          <p>Cena: {props.price}zł</p>
           <Form.Label>Ilość:</Form.Label>
           <Form.Control className="my-3" style={{ width: "5rem" }} type="number" max="20" min="0" />
           <Button variant="dark">Dodaj do koszyka</Button>
