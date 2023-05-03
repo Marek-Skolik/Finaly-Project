@@ -1,26 +1,26 @@
-import React, { useEffect } from "react";
-import { useSelector } from "react-redux";
-import { Container, Row, Col } from "react-bootstrap";
+import React from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import SingleProduct from "../SingleProduct/SingleProduct";
-import { API_URL } from "../../../config";
+import SalesSection from "../Sections/SalesSection/SalesSection";
+import CarouselSection from "../Sections/CarouselSection/CarouselSection";
 import { getAll } from "../../../redux/productsRedux";
+import { useSelector } from "react-redux";
 
 const HomePage = () => {
-  useEffect(() => fetchData(), []);
 
-  function fetchData() {
-    fetch(`${API_URL}/api/products`)
-      .then((res) => res.json())
-  }
-
-  const products = useSelector(getAll);
+  const allProducts = useSelector(getAll);
 
   return (
     <Container>
+      <SalesSection />
       <Row>
-        {products.map((product) => (<Col key={product.id}><SingleProduct {...product} /></Col>
+        {allProducts.map((product) => (
+          <Col key={product.id}>
+            <SingleProduct {...product} />
+          </Col>
         ))}
       </Row>
+      <CarouselSection />
     </Container>
   );
 };

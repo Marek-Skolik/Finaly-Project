@@ -16,11 +16,6 @@ import Returns from './components/Views/Footer/Returns/Returns';
 
 function App() {
 
-
-  const Data = () => {
-    localStorage.setItem("user", JSON.stringify("Marek"));
-  };
-
   return (
       <div>
         <Router>
