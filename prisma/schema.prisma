@@ -13,7 +13,7 @@ datasource db {
 model Product {
   id     String @id @default(uuid())
   name      String
-  price     Number
+  price     Int
   description String?
   photo     Bytes
   photo2    Bytes
@@ -28,7 +28,7 @@ model Order {
   customer    String
   products    String
   quantity    String
-  totalPrice  Number
+  totalPrice  Int
   email       String
   phone       String
   adress      String

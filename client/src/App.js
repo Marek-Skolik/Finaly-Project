@@ -6,7 +6,6 @@ import HomePage from './components/Pages/HomePage/HomePage';
 import Cart from './components/Pages/Cart/Cart';
 import OrderForm from './components/Pages/OrderForm/OrderForm';
 import ProductPage from './components/Pages/ProductPage/ProductPage';
-import SingleProduct from './components/Pages/SingleProduct/SingleProduct';
 import ContactPage from './components/Pages/ContactPage/ContactPage';
 import AboutUsPage from './components/Pages/AboutUsPage/AboutUsPage';
 import SalePage from './components/Pages/SalePage/SalePage';
@@ -17,7 +16,7 @@ import Returns from './components/Views/Footer/Returns/Returns';
 function App() {
 
   return (
-      <div>
+      <main>
         <Router>
           <Container>
             <Header />
@@ -26,7 +25,6 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/orderForm" element={<OrderForm />} />
               <Route path="/productPage" element={<ProductPage />} />
-              <Route path="/singleProduct" element={<SingleProduct />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/aboutUsPage" element={<AboutUsPage />} />
               <Route path="/salePage" element={<SalePage />} />
@@ -37,7 +35,7 @@ function App() {
             <Footer /> 
           </Container>
         </Router>  
-      </div>
+      </main>
   );
 }
 

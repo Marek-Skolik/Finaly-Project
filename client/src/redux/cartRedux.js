@@ -4,7 +4,7 @@ export const getCartById = ({ cart }, id) =>
   cart.find((cart) => cart.id === id);
 
 // actions
-const createActionName = (actionName) => `app/products/${actionName}`;
+const createActionName = (actionName) => `app/product/${actionName}`;
 const ADD_CART = createActionName('ADD_CART');
 
 // action creators
