@@ -11,7 +11,7 @@ const SalesSection = () => {
             <p className="lead mb-5">
               Nie pomiń swietnych promocji! <b>-25%</b> na każdy produkt!
             </p>
-            <Button href="/salePage" variant="light" size="lg">Sprawdź</Button>
+            <Button variant="light" size="lg">Sprawdź</Button>
           </Col>
         </Row>
       </Container>

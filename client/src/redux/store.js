@@ -5,13 +5,12 @@ import productsReducer from './productsRedux';
 import cartReducer from './cartRedux';
 import ordersReducer from './ordersRedux';
 
-const subreducers = combineReducers({
-  products: productsReducer,
-  orders: ordersReducer,
+const reducer = combineReducers({
+  product: productsReducer,
+  order: ordersReducer,
   cart: cartReducer,
 });
 
-const reducer = combineReducers(subreducers);
 const store = createStore(
   reducer,
   initialState,

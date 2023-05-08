@@ -1,0 +1,26 @@
+.summerSection {
+    background-position: center;
+    background-size: 100% auto;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-right: 20px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+  }
+  
+  .button {
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 520px) {
+    .summerSection {
+      display: none;
+    }
+  }
