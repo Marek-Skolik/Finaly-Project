@@ -2,13 +2,11 @@ import React from 'react';
 import { Button, Card, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
 const SingleProduct = ({ product }) => {
-
   const { id, name, price, photo } = product;
 
   return (
-    <Card style={{ width: 'calc(100% / 3 - 2rem)', marginBottom: '2rem' }}>
+    <Card className="mb-4">
       <div
         style={{
           position: 'relative',
@@ -51,11 +49,11 @@ const SingleProduct = ({ product }) => {
               max="20"
             />
           </Form.Group>
-          <div>
-            <Button className="my-2" variant="dark">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+            <Button className="my-2 max-2" variant="dark">
               Dodaj do koszyka
             </Button>
-            <Button as={Link} to={`/productPage/${id}`} variant="secondary" className="mx-2">
+            <Button as={Link} to={`/productPage/${id}`} variant="secondary" className="my-2">
               Pokaż
             </Button>
           </div>

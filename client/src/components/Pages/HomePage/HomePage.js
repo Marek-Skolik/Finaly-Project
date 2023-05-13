@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { useSelector } from 'react-redux';
 import SingleProduct from '../SingleProduct/SingleProduct';
 import SalesSection from '../Sections/SalesSection/SalesSection';
@@ -15,10 +15,9 @@ const HomePage = () => {
       <SummerSection />
       <Row>
         {products.map((product) => (
-          <SingleProduct
-            key={product.id}
-            product={product}
-          />
+          <Col key={product.id} xs={12} sm={6} md={4} lg={3}>
+            <SingleProduct product={product} />
+          </Col>
         ))}
       </Row>
       <SalesSection />
