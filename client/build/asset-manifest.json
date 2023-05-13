@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.dc1f5b57.css",
-    "main.js": "/static/js/main.a4a8736d.js",
+    "main.js": "/static/js/main.063df2c7.js",
     "static/media/spodnie.png": "/static/media/spodnie.19b743df15b57f70e121.png",
     "static/media/payu.png": "/static/media/payu.051cdc331731425208ff.png",
     "static/media/kurtka.png": "/static/media/kurtka.ac8186f5fa0a257c4d1d.png",
@@ -14,10 +14,10 @@
     "static/media/applepay.png": "/static/media/applepay.17e5fc0f8bf0dcd8b98f.png",
     "index.html": "/index.html",
     "main.dc1f5b57.css.map": "/static/css/main.dc1f5b57.css.map",
-    "main.a4a8736d.js.map": "/static/js/main.a4a8736d.js.map"
+    "main.063df2c7.js.map": "/static/js/main.063df2c7.js.map"
   },
   "entrypoints": [
     "static/css/main.dc1f5b57.css",
-    "static/js/main.a4a8736d.js"
+    "static/js/main.063df2c7.js"
   ]
 }
