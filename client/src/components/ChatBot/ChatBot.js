@@ -21,8 +21,8 @@ const ChatBot = () => {
           </div>
         </div>
         <div className={styles.message}>
-          <input type='text' style={{ width: '100%'}} placeholder='Contact with support'></input>
-          <Button className='text-center' variant='dark'>Send</Button>
+          <input type='text' style={{ width: '100%'}} placeholder='...'></input>
+          <Button className='text-center' variant='dark'>Wyślij</Button>
         </div>
       </div>
     </div>

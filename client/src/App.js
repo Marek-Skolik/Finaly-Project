@@ -13,29 +13,29 @@ import Payments from './components/Views/Footer/Payments/Payments';
 import Returns from './components/Views/Footer/Returns/Returns';
 import ChatBot from './components/ChatBot/ChatBot';
 
-function App() {
 
+function App() {
   return (
-      <main>
-        <Router>
-          <Container>
-            <Header />
-            <Routes>
-              <Route path="/" element={<HomePage />} /> 
-              <Route path="/cart" element={<Cart />} />
-              <Route path="/orderForm" element={<OrderForm />} />
-              <Route path="/productPage" element={<ProductPage />} />
-              <Route path="/contact" element={<ContactPage />} />
-              <Route path="/aboutUsPage" element={<AboutUsPage />} />
-              <Route path="/delivery" element={<Delivery />} />
-              <Route path="/payments" element={<Payments />} />
-              <Route path="/returns" element ={<Returns />} />
-            </Routes>  
-            <ChatBot />
-            <Footer /> 
-          </Container>
-        </Router>  
-      </main>
+    <main>
+      <Router>
+        <Container>
+          <Header />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/cart" element={<Cart />} /> {/* Dodaj element do trasy "/cart" */}
+            <Route path="/orderForm" element={<OrderForm />} />
+            <Route path="/productPage/:productId" element={<ProductPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/aboutUsPage" element={<AboutUsPage />} />
+            <Route path="/delivery" element={<Delivery />} />
+            <Route path="/payments" element={<Payments />} />
+            <Route path="/returns" element={<Returns />} />
+          </Routes>
+          <ChatBot />
+          <Footer />
+        </Container>
+      </Router>
+    </main>
   );
 }
 

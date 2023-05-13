@@ -2,7 +2,6 @@ import { Card, Button, Form, Container } from "react-bootstrap";
 
 function Cart() {
 
-
   return (
     <Container>
         <div className="container mt-3 mb-5">
@@ -36,3 +35,11 @@ function Cart() {
 }
 
 export default Cart;
+
+
+
+
+
+
+
+

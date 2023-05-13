@@ -1,3 +1,4 @@
+import React from 'react';
 import { Navbar, Container, Nav, Image } from 'react-bootstrap';
 import logo from './logo.png';
 import styles from './Header.module.scss';
@@ -5,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
+
   return (
     <Navbar collapseOnSelect expand="lg" variant="bg-light">
       <Container>
