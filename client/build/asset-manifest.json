@@ -1,16 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.79a93175.css",
-    "main.js": "/static/js/main.3375f7a0.js",
+    "main.css": "/static/css/main.dc1f5b57.css",
+    "main.js": "/static/js/main.a4a8736d.js",
+    "static/media/spodnie.png": "/static/media/spodnie.19b743df15b57f70e121.png",
     "static/media/payu.png": "/static/media/payu.051cdc331731425208ff.png",
+    "static/media/kurtka.png": "/static/media/kurtka.ac8186f5fa0a257c4d1d.png",
+    "static/media/buty.png": "/static/media/buty.d24f43fed73ef2318a79.png",
+    "static/media/bielizna.png": "/static/media/bielizna.28bf2cce52d8d98623f0.png",
+    "static/media/summer.png": "/static/media/summer.76211924043eeb54b1fb.png",
+    "static/media/koszula.png": "/static/media/koszula.88481fe8d1c6d424a7c0.png",
     "static/media/ups.png": "/static/media/ups.92524355f3aaa3c72f5d.png",
+    "static/media/t-shirt.png": "/static/media/t-shirt.55f185f1c7f3f773417a.png",
     "static/media/applepay.png": "/static/media/applepay.17e5fc0f8bf0dcd8b98f.png",
     "index.html": "/index.html",
-    "main.79a93175.css.map": "/static/css/main.79a93175.css.map",
-    "main.3375f7a0.js.map": "/static/js/main.3375f7a0.js.map"
+    "main.dc1f5b57.css.map": "/static/css/main.dc1f5b57.css.map",
+    "main.a4a8736d.js.map": "/static/js/main.a4a8736d.js.map"
   },
   "entrypoints": [
-    "static/css/main.79a93175.css",
-    "static/js/main.3375f7a0.js"
+    "static/css/main.dc1f5b57.css",
+    "static/js/main.a4a8736d.js"
   ]
 }
