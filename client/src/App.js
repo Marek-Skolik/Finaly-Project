@@ -22,7 +22,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/cart" element={<Cart />} /> {/* Dodaj element do trasy "/cart" */}
+            <Route path="/cart" element={<Cart />} />
             <Route path="/orderForm" element={<OrderForm />} />
             <Route path="/productPage/:productId" element={<ProductPage />} />
             <Route path="/contact" element={<ContactPage />} />
